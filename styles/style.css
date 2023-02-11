@@ -24,6 +24,8 @@ section#box-login{
     transform: translate(-50%,-50%);
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(17, 17, 17, 0.493);
+    display: flex;
+    flex-direction: column;
 }
 div#imagem-fundo{
     height: 40%;
@@ -56,6 +58,7 @@ div.entradas{
     padding: 2px;
     height: 35px;
 }
+
 div.entradas label{
     color: white;
     
@@ -66,6 +69,9 @@ div.entradas input{
     border: none;
     padding: 5px;
     margin-left: 5px;
+}
+div.entradas input:focus{
+    outline: 2px solid rgba(0, 0, 0, 0.623);
 }
 input.botao{
     display: block;
@@ -82,17 +88,18 @@ input.botao:hover{
     transition-duration: 1s;
 }
 input#entrar{
-    background-color: #719429;
+    background-color: #507702;
     color: white;
 }
 input#entrar:hover{
-    background-color: #507702;
+    background-color: #719429;
+    font-weight: bold;
 }
 input#esquecisenha{
     color: #719429;
 }
 input#esquecisenha:hover{
-    color: white;
-    background-color: #507702;
+  
+    font-weight: bold;
     
 }
