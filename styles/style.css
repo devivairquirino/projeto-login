@@ -1,0 +1,98 @@
+/* Mobile First */
+@charset "UTF-8";   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;    
+    background-color: #7B2D94;
+}
+section#box-login{
+    width: 80vw;
+    min-width: 250px;
+    max-width: 300px;
+    height: 95vh;
+    min-height: 510px;
+    max-height: 540px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(17, 17, 17, 0.493);
+}
+div#imagem-fundo{
+    height: 40%;
+    background: rgb(0, 46, 88) url('../imagens/technology.jpg');
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: inset 0px -1px 4px rgba(178, 210, 252, 0.829);
+}
+div#login{
+    padding: 5px;
+
+}
+div#login h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+div#login p{
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 5px 5px;
+}
+fieldset{
+    border: none;
+}
+div.entradas{
+    background-color: #7B2D94;
+    margin: 3px;
+    border-radius: 7px; 
+    display: flex;
+    padding: 2px;
+    height: 35px;
+}
+div.entradas label{
+    color: white;
+    
+}
+div.entradas input{
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+}
+input.botao{
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 38px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #719429;
+}
+input.botao:hover{
+    width: 98%;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+}
+input#entrar{
+    background-color: #719429;
+    color: white;
+}
+input#entrar:hover{
+    background-color: #507702;
+}
+input#esquecisenha{
+    color: #719429;
+}
+input#esquecisenha:hover{
+    color: white;
+    background-color: #507702;
+    
+}
