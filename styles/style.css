@@ -1,21 +1,26 @@
-/* Mobile First */
-@charset "UTF-8";   
-
+/* Mobile First */  
+:root{
+    --cor1: #7B2D94;
+    --cor2: #85a83f;
+    --cor-hover: #88a849;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    height: 100vh;
+}
 body{
     font-family: monospace;    
-    background-color: #7B2D94;
+    background-color: var(--cor1);
 }
 section#box-login{
     width: 80vw;
-    min-width: 20px;
     max-width: 300px;
     height: 95vh;
-    min-height: 510px;
+    min-height: 500px;
     max-height: 540px;
     background-color: white;
     position: absolute;
@@ -51,7 +56,7 @@ fieldset{
     border: none;
 }
 div.entradas{
-    background-color: #7B2D94;
+    background-color: var(--cor1);
     margin: 3px;
     border-radius: 7px; 
     display: flex;
@@ -76,30 +81,32 @@ div.entradas input:focus{
 input.botao{
     display: block;
     margin: auto;
-    width: 95%;
+    width: 100%;
     height: 38px;
     margin-top: 5px;
     border-radius: 5px;
-    border: 2px solid #719429;
+    border: 2px solid var(--cor2);
 }
 input.botao:hover{
-    width: 98%;
+   
     transition-property: background-color, color;
     transition-duration: 1s;
 }
 input#entrar{
-    background-color: #507702;
+    background-color: var(--cor2);
     color: white;
+    border-color: var(--cor2);
 }
 input#entrar:hover{
-    background-color: #719429;
+    background-color: var(--cor-hover);
     font-weight: bold;
 }
 input#esquecisenha{
-    color: #719429;
+    color: var(--cor2);
 }
 input#esquecisenha:hover{
-  
+    color: white;
+  background-color: var(--cor2);
     font-weight: bold;
     
 }

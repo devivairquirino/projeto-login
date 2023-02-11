@@ -1,0 +1,44 @@
+/* Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+ */
+ 
+ :root{
+    --cor-deg1: #7B2D94;
+    --cor-deg2: #60a9fc;
+    --cor-degrade: to bottom, var(--cor-deg1) 20%, var(--cor-deg2); 
+ }
+  body {
+    background: linear-gradient(var(--cor-degrade));
+  } 
+  section#box-login{
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    min-height: 380px;
+    max-height: 400px;
+    
+  }
+  div#imagem-fundo{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background-image: url('../imagens/technology_580x500.jpg');
+    box-shadow: inset 1px 0px 4px rgba(178, 210, 252, 0.829);
+  }
+  div#login{
+    padding: 10px;
+    max-width: 500px;
+ 
+ }
+ div#login h1{
+    font-size: 4em;
+    padding-bottom: 10px;
+ }
+ div#login p{
+    font-size: 1.6em;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+ }
