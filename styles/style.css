@@ -110,6 +110,11 @@ input#esquecisenha:hover{
     font-weight: bold;
     
 }
+form > input[type='submit']{
+    display: block;
+}
+ 
+
 @media screen and (orientation: landscape) and (max-width: 768px) {
     body{
         background-color: #123dcc;
@@ -121,5 +126,4 @@ input#esquecisenha:hover{
     }
     
 
-    
 }
