@@ -110,3 +110,9 @@ input#esquecisenha:hover{
     font-weight: bold;
     
 }
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    section#box-login{
+      max-height: 90vh;
+      
+    }
+}
